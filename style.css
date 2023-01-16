@@ -1,6 +1,6 @@
 
 #timer {
-  width: 380px;
+  width: 340px;
   font-size: 70px;
   background-color: black;
   color: white;
@@ -9,7 +9,7 @@
 }
 
 #controls {
-  margin-left:150px;
+  margin-left:120px;
   margin-top: 30px;
 }
 
