@@ -13,13 +13,6 @@ function displayTimer() {
 
   T.difference = timeNow - T.timerStarted;
 
-  // milliseconds
-  if(T.difference > 10) {
-    miliseconds = Math.floor((T.difference % 1000) / 10);
-    if(miliseconds < 10) {
-      miliseconds = '0'+String(miliseconds);
-    }
-  }
   // seconds
   if(T.difference > 1000) {
     seconds = Math.floor(T.difference / 1000);
@@ -55,8 +48,7 @@ function displayTimer() {
 
   time  =  hours   + ':'
   time += minutes + ':'
-  time += seconds + ':'
-  time += miliseconds;
+  time += seconds;
 
   T.timerDiv.innerHTML = time;
 }
@@ -90,7 +82,7 @@ function stopTimer() {
 
 function clearTimer() {
   clearInterval(T.timerInterval);
-  T.timerDiv.innerHTML = "00:00:00:00"; // reset timer to all zeros
+  T.timerDiv.innerHTML = "00:00:00"; // reset timer to all zeros
   T.difference = 0;
 
   document.getElementById('stop').style.display="none";
