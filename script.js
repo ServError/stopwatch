@@ -7,7 +7,7 @@ T.timerDiv = document.getElementById('timer');
 function displayTimer() {
   // initilized all local variables:
   var hours='00', minutes='00',
-  miliseconds=0, seconds='00',
+  seconds='00',
   time = '',
   timeNow = new Date().getTime(); // timestamp (miliseconds)
 
