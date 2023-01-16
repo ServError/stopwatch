@@ -3,14 +3,14 @@
   width: 460px;
   font-size: 70px;
   background-color: black;
-  color: limegreen;
+  color: white;
   padding: 25px;
   border-radius: 10px;
 }
 #labels {
   margin-top: -25px;
   z-index: 2;
-  color: limegreen;
+  color: white;
   font-size: 12px;
 }
 #hh {margin-left: 45px;}
@@ -33,7 +33,7 @@ button {
   border-radius: 10px;
   box-shadow: 5px 5px 5px #888888;
 }
-#go    { background-color: limegreen; }
+#go    { background-color: green; }
 
 #stop  { background-color: red;  display: none; }
 
